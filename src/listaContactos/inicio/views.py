@@ -9,3 +9,6 @@ def myHomeView(request, *args, **kwargs):
     
 def anotherView(request):
     return HttpResponse('<h1>Solo otra pagina</h1>')
+    
+def aboutView(request):
+    return render(request, "about.html", {})
