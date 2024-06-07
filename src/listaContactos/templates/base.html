@@ -6,9 +6,16 @@
 	
 	<body>
 		{% include 'nav.html' %}
-		<h1>Este es un texto de Base</h1>
-		{%block content %}
-			Reemplazame
-		{% endblock %}
+        <h1>Este es un texto de Base</h1>
+        <div>
+            {% block content %}
+                Reemplázame
+            {% endblock %}
+        </div>
+        <div>
+            {% block sidebar %}
+                
+            {% endblock %}
+        </div>
 	</body>
 </html>
